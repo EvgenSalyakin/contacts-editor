@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/contacts-editor/static/css/main.a8a55322.css",
-    "main.js": "/contacts-editor/static/js/main.919855fb.js",
+    "main.css": "/contacts-editor/static/css/main.44c9c40d.css",
+    "main.js": "/contacts-editor/static/js/main.bd4f49f0.js",
     "index.html": "/contacts-editor/index.html",
-    "main.a8a55322.css.map": "/contacts-editor/static/css/main.a8a55322.css.map",
-    "main.919855fb.js.map": "/contacts-editor/static/js/main.919855fb.js.map"
+    "main.44c9c40d.css.map": "/contacts-editor/static/css/main.44c9c40d.css.map",
+    "main.bd4f49f0.js.map": "/contacts-editor/static/js/main.bd4f49f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8a55322.css",
-    "static/js/main.919855fb.js"
+    "static/css/main.44c9c40d.css",
+    "static/js/main.bd4f49f0.js"
   ]
 }
