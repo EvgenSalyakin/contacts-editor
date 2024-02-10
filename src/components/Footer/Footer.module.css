@@ -1,0 +1,33 @@
+.footer a {
+  background-color: transparent;
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.footer h3 {
+  font-size: 1.75rem;
+}
+
+.footer {
+  text-align: center;
+
+  margin: 25px 25px 0 25px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  font-weight: 900;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 45px;
+  box-shadow: 3px 3px 7px rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
