@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/contacts-editor/static/css/main.44c9c40d.css",
-    "main.js": "/contacts-editor/static/js/main.bd4f49f0.js",
+    "main.js": "/contacts-editor/static/js/main.a9d6f32e.js",
     "index.html": "/contacts-editor/index.html",
     "main.44c9c40d.css.map": "/contacts-editor/static/css/main.44c9c40d.css.map",
-    "main.bd4f49f0.js.map": "/contacts-editor/static/js/main.bd4f49f0.js.map"
+    "main.a9d6f32e.js.map": "/contacts-editor/static/js/main.a9d6f32e.js.map"
   },
   "entrypoints": [
     "static/css/main.44c9c40d.css",
-    "static/js/main.bd4f49f0.js"
+    "static/js/main.a9d6f32e.js"
   ]
 }
