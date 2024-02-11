@@ -1,6 +1,7 @@
 import "./App.css";
 import { Component } from "react";
 import { ContactsList, ImputForm } from "components";
+import { nanoid } from "nanoid";
 
 export class App extends Component {
   state = {
@@ -13,14 +14,32 @@ export class App extends Component {
     filter: "",
   };
 
+  handleDelete = (id) => {
+    this.setState((prev) => {
+      console.log(id);
+      return {
+        contacts: prev.contacts.filter((el) => el.id !== id),
+      };
+    });
+  };
+
+  createContact = (data) => {
+    const id = nanoid();
+    const newData = { id, ...data };
+    this.setState((prev) => ({ contacts: [newData, ...prev.contacts] }));
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <p>Phonebook</p>
         </header>
-        <ImputForm />
-        <ContactsList list={this.state.contacts} />
+        <ImputForm createContact={this.createContact} />
+        <ContactsList
+          handleDelete={this.handleDelete}
+          list={this.state.contacts}
+        />
       </div>
     );
   }

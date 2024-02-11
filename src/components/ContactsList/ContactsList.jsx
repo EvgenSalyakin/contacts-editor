@@ -8,7 +8,7 @@ import {
   LeaderBoardProfiles,
 } from './ContactsList.module';
 
-export const ContactsList = ({ list }) => {
+export const ContactsList = ({ list, handleDelete }) => {
   return (
     <LeaderBoard>
       <BoardHeader>
@@ -18,8 +18,12 @@ export const ContactsList = ({ list }) => {
       </BoardHeader>
 
       <LeaderBoardProfiles>
-        {list.map(({ id, name, number }) => (
-          <ContactsListItem key={id} name={name} number={number} />
+        {list.map(contact => (
+          <ContactsListItem
+            key={contact.id}
+            contact={contact}
+            handleDelete={handleDelete}
+          />
         ))}
       </LeaderBoardProfiles>
     </LeaderBoard>
