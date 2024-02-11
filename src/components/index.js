@@ -4,3 +4,4 @@ export * from "components/Footer/Footer.module";
 export * from "components/ContactsList/ContactsList";
 export * from "components/ContactsListItem/ContactsListItem";
 export * from "components/ImputForm/ImputForm";
+export * from "components/Filter/Filter";

@@ -11,3 +11,11 @@ export const Item = ({ children }) => {
 export const Number = ({ children }) => {
   return <span className={styles.number}>{children}</span>;
 };
+
+export const Button = ({ onClick, children }) => {
+  return (
+    <button className={styles.button} onClick={onClick}>
+      {children}
+    </button>
+  );
+};

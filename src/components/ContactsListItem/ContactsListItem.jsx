@@ -1,4 +1,4 @@
-import { Item, Name, Number } from './ContactsListItem.module';
+import { Button, Item, Name, Number } from './ContactsListItem.module';
 
 export const ContactsListItem = ({ contact, handleDelete }) => {
   return (
@@ -6,17 +6,8 @@ export const ContactsListItem = ({ contact, handleDelete }) => {
       <Item>
         <Name>{contact.name}</Name>
         <Number>{contact.number}</Number>
+        <Button onClick={() => handleDelete(contact.id)}>Delete</Button>
       </Item>
-      <button
-        onClick={() => handleDelete(contact.id)}
-        style={{
-          width: '50px',
-          display: 'inline-block',
-          [`font-size`]: ' 9px',
-        }}
-      >
-        Delete
-      </button>
     </>
   );
 };

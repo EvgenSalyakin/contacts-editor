@@ -13,7 +13,7 @@ export const ContactsList = ({ list, handleDelete }) => {
     <LeaderBoard>
       <BoardHeader>
         <BoardTitle>
-          <TitleBottom>Contacts</TitleBottom>
+          <TitleBottom></TitleBottom>
         </BoardTitle>
       </BoardHeader>
 

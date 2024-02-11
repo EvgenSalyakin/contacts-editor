@@ -9,6 +9,11 @@ export class ImputForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    // let nameValid = this.state.name.match();
+    // let numberValid = this.state.number.match();
+    // if (!nameValid || !numberValid) {
+    //   return;
+    // }
     this.props.createContact(this.state);
     this.setState({
       name: '',
@@ -23,7 +28,7 @@ export class ImputForm extends Component {
   render() {
     return (
       <form className={Style.form} onSubmit={this.handleSubmit}>
-        <label htmlFor="inputName">N a m e :</label>
+        <label htmlFor="inputName">Name:</label>
         <input
           value={this.state.name}
           onChange={this.handleChange}
@@ -31,7 +36,7 @@ export class ImputForm extends Component {
           aria-describedby="nameHelp"
           type="text"
           name="name"
-          pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я0-9 ])?[a-zA-Zа-яА-Я0-9]*)*$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
         />
